@@ -54,9 +54,8 @@ header .header-container {
 }
 .header-container h1 {
     font-size: 2.4rem;
-    font-style: normal;
     font-weight: bold;
-    line-height: 26px;
+    line-height: 2.6rem;
     color: var(--just-white);
 
 }
@@ -65,7 +64,7 @@ header .header-container {
     font-size: 1.4rem;
     font-weight: 500;
     font-style: normal;
-    line-height: 18px;
+    line-height: 1.8rem;
     color: var(--soft-orange);
 }
 header .header-buttom {
@@ -87,3 +86,46 @@ header .header-buttom {
 .header-buttom span {
     margin-left: 14px;
 }
+ /* Main */
+ main {
+     width: 100%;
+     min-width: 320px;
+     height: auto;
+     background-color: var(--just-white);
+ }
+ main .main-exchange {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+ }
+ main .main-exchange--title {
+     width: 90%;
+     min-width: 288px;
+     max-width: 900px;
+     margin: 0 auto;
+ }
+ main .background-coin {
+     width: 200px;
+     height: 200px;
+     margin: 0 auto;
+     margin-bottom: 50px;
+     background: url(/assets/img/Bitcoin.svg)
+     center/cover no-repeat;
+ }
+ .main-exchange--title h2 {
+     margin-bottom: 30xp;
+     font-size: 2.4rem;
+     font-weight: bold;
+     line-height: 2.6rem;
+     color: var(--warm-black);
+ }
+ .main-exchange--title p {
+    margin-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+ }
+  /* Tablas */
