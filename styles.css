@@ -25,6 +25,7 @@
 html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 }
   /* Header */
 header {
@@ -72,6 +73,7 @@ header .header-buttom {
     left: calc(50% - 114.5px);
     top: calc(100% - 24px);
     width: 229px;
+    min-width: 230px;
     height: 48px;
     padding: 15px;
     font-size: 1.4rem;
@@ -129,6 +131,16 @@ header .header-buttom {
     color: #757575;
  }
   /* Tablas */
+
+  .main-tables--container{
+      display: flex;
+      gap: 10px;
+      height: 450px;
+      margin: 0 40px;
+      overflow-x: auto;
+      overscroll-behavior-x: contain;
+      scroll-snap-type: x proximity;
+  }
   .main-currency-table ,
   .main-commission-table {
       width: 70%;
@@ -323,11 +335,12 @@ header .header-buttom {
        color: #808080;
    }
    /* Seccion fondo  */
+
 .bitcoin-img--container {
        width: 100%;
        min-width: 320px;
        height: 60vh;
-       background-image: url(/assets/img/bitcoinbaby2x.jpg);
+       background-image: url(/assets/img/bitcoinbaby.jpg);
        background-size: cover;
        background-position: center;
        background-repeat: no-repeat;
@@ -341,9 +354,12 @@ header .header-buttom {
     color: var(--just-white);
 }
 /* Seccion Planes */
+
 .main-plans--container {
     width: 100%;
     min-width: 320px;
+    max-width: 1020px;
+    margin: 0 auto;
     padding: 65px 0;
     text-align: center;
 }
@@ -372,14 +388,14 @@ header .header-buttom {
     gap: 10px;
     height: 316px;
     margin: 0 30px;
-    overflow-x: scroll;
+    overflow-x: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 }
 .plans-container--card {
     position: relative;
     scroll-snap-align: center;
-    width: 10%;
+    width: 90%;
     min-width: 190px;
     max-width: 300px;
     height: 250px;
@@ -405,9 +421,8 @@ header .header-buttom {
 .plans-container--card .basic, .plus {
     position: absolute;
     top: -10px;
-    left: 40px;
-    width: 110px;
-    min-width: 100px;
+    left: calc(50% - 60px);
+    width: 120px;
     font-size: 1.2rem;
     font-weight: bold;
     /* transform: rotate(45deg); */
