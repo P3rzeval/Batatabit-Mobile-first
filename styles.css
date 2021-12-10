@@ -380,7 +380,7 @@ header .header-buttom {
     position: relative;
     scroll-snap-align: center;
     width: 10%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
     margin: 50px auto 0;
@@ -405,7 +405,7 @@ header .header-buttom {
 .plans-container--card .basic, .plus {
     position: absolute;
     top: -10px;
-    left: 61px;
+    left: 40px;
     width: 110px;
     min-width: 100px;
     font-size: 1.2rem;
@@ -461,6 +461,29 @@ header .header-buttom {
     background-image: url(/assets/icons/orange-right-arrow.svg);
     vertical-align: text-bottom;
 }
-/* Scroll horizontal*/
-
-
+ /* footer */
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer-links ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.footer-links li {
+    margin: 10px 0;
+}
+.footer-links a {
+    text-decoration: none;
+    color: var(--just-white);
+}
